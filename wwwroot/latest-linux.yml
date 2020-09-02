@@ -1,0 +1,9 @@
+version: 0.7.1
+files:
+  - url: electron-updater-example 0.7.1.AppImage
+    sha512: Amp7A7Hcdnit411bGGr7nyhQZX7Fi87FAAf1IElndd2oudbhrTNovgSh6Yrocif59ujXDIULbElVwNY7oqkH6A==
+    size: 52596566
+    blockMapSize: 55450
+path: electron-updater-example 0.7.1.AppImage
+sha512: Amp7A7Hcdnit411bGGr7nyhQZX7Fi87FAAf1IElndd2oudbhrTNovgSh6Yrocif59ujXDIULbElVwNY7oqkH6A==
+releaseDate: '2020-09-02T15:52:12.068Z'

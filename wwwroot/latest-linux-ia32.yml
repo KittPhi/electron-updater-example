@@ -1,0 +1,9 @@
+version: 0.7.1
+files:
+  - url: electron-updater-example 0.7.1 i386.AppImage
+    sha512: 9RTKxbJI6UU5FadcmqTalr+f1Meo0xnlVDPWheCE52HhDPtL7yo2g4QNL0WZkBYlei5e3onN67jZDDSwBDrT8g==
+    size: 53675617
+    blockMapSize: 56177
+path: electron-updater-example 0.7.1 i386.AppImage
+sha512: 9RTKxbJI6UU5FadcmqTalr+f1Meo0xnlVDPWheCE52HhDPtL7yo2g4QNL0WZkBYlei5e3onN67jZDDSwBDrT8g==
+releaseDate: '2020-09-02T15:52:12.068Z'
