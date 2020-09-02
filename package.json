@@ -3,7 +3,11 @@
   "version": "0.7.1",
   "main": "main.js",
   "description": "electron-updater example project",
-  "author": "Matt Haggard",
+  "author": {
+    "name": "Electronic Caregiver",
+    "email": "asalcido@ecg-hq.com",
+    "url": "https://electronic-caregiver.com"
+  },
   "scripts": {
     "publish": "build -p always"
   },
@@ -13,14 +17,17 @@
   },
   "dependencies": {
     "electron-log": "^1.3.0",
-    "electron-updater": "^4.0.6"
+    "electron-updater": "^4.0.6",
+    "http-server": "^0.12.3"
   },
   "build": {
-    "publish": [{
-      "provider": "s3",
-      "bucket": "e-motion-electron-updater",
-      "region": "us-east-1"
-  }],
+    "publish": [
+      {
+        "provider": "s3",
+        "bucket": "e-motion-electron-updater",
+        "region": "us-east-1"
+      }
+    ],
     "appId": "com.github.iffy.electronupdaterexample",
     "mac": {
       "category": "your.app.category.type",
@@ -28,6 +35,14 @@
         "zip",
         "dmg"
       ]
+    },
+    "linux": {
+      "target": [
+        "AppImage",
+        "deb"
+      ],
+      "icon": "icon.svg",
+      "category": "Science"
     }
   }
 }

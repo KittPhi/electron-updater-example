@@ -72,3 +72,14 @@ If you can't use GitHub, you can use other providers:
 9. Do steps 5 and 6 again.
 
 10. Open the installed version of the app and see that it updates itself.
+
+
+# -----------------------------------------------------------------------
+yarn
+node_modules/.bin/build --linux --x64
+mkdir -p wwwroot
+cp dist/*.yml wwwroot/
+cp dist/*.AppImage wwwroot/
+cp dist/*.deb wwwroot/
+yarn add http-server
+node_modules/.bin/http-server wwwroot/ -p 8080
