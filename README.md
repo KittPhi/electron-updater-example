@@ -2,13 +2,68 @@
 
 https://www.electron.build/configuration/publish#recommended-github-releases-workflow
 
-2. TRY to commit and push
+DONT PUSH (this repo is public since it was forked, need to copy?)
 
-Had to leave out other keys.
+# Work Flow
+1. Create `github Personal Access Token`
 
-TESTING V2
+2. At terminal, export the `github Personal Access Token`
+    export GH_TOKEN="####"
+
+3. Edit `package.json`. 
+
+```python
+"version": "0.7.1",
+"build": {
+    "publish": [
+      {
+        "provider": "github",
+        "repo": "e-motion",
+        "owner": "KittPhi",
+        "token": "###",
+        "private": true
+      }
+    ],
+    "appId": "com.github.kittphi.e-motion",
+    "linux": {
+      "target": [
+        "AppImage",
+        "deb"
+      ],
+      "icon": "icon.svg",
+      "category": "Science"
+    }
+  }
+  ```
+
+4. At Terminal, run command to publish version 1.
+
+```python
+npm run publish
+```
+
+5. Go to GitHub and [publish draft version 1](https://github.com/KittPhi/e-motion/releases)
+
+6. Edit `package.json` to reflect version 2.
+
+```python
+"version": "0.7.2",
+```
+
+7. At Terminal, run command to publish version 2.
+
+```python
+npm run publish
+```
+
+8. Go to GitHub and [publish draft version 2](https://github.com/KittPhi/e-motion/releases)
+
+9. Open AppImage version 1 and we will see it update to version 2. 
+- AppImage version 1 file will be deleted after updated.
 
 
+
+# ======================================================================================
 This repo contains the **bare minimum code** to have an auto-updating Electron app using [`electron-updater`](https://github.com/electron-userland/electron-builder/tree/master/packages/electron-updater) with releases stored on GitHub.
 
 If you can't use GitHub, you can use other providers:

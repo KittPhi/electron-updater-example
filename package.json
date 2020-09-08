@@ -25,11 +25,11 @@
         "provider": "github",
         "repo": "e-motion",
         "owner": "KittPhi",
-        "token": "43fc2cc02102d13d53d3d8f53cc4de2bf7b9a531",
+        "token": "###",
         "private": true
       }
     ],
-    "appId": "com.github.iffy.electronupdaterexample",
+    "appId": "com.github.kittphi.e-motion",
     "linux": {
       "target": [
         "AppImage",
