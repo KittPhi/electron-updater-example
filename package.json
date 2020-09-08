@@ -25,13 +25,8 @@
         "provider": "github",
         "repo": "e-motion",
         "owner": "KittPhi",
-        "vPrefixedTagName": "false",
-        "host": "github.com",
-        "protocol": "https",
         "token": "43fc2cc02102d13d53d3d8f53cc4de2bf7b9a531",
-        "private": true,
-        "releaseType": "release",
-        "publishAutoUpdate": "true"
+        "private": true
       }
     ],
     "appId": "com.github.iffy.electronupdaterexample",
