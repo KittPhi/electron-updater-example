@@ -1,6 +1,6 @@
 {
   "name": "electron-updater-example",
-  "version": "0.7.2",
+  "version": "0.7.1",
   "main": "main.js",
   "description": "electron-updater example project",
   "author": {
@@ -17,14 +17,23 @@
   },
   "dependencies": {
     "electron-log": "^1.3.0",
-    "electron-updater": "^4.0.6"
+    "electron-updater": "^4.2.0"
   },
   "build": {
-    "publish": [{
-      "provider": "github",
-      "owner": "KittPhi",
-      "repo": "e-motion"
-  }],
+    "publish": [
+      {
+        "provider": "github",
+        "repo": "e-motion",
+        "owner": "KittPhi",
+        "vPrefixedTagName": "false",
+        "host": "github.com",
+        "protocol": "https",
+        "token": "43fc2cc02102d13d53d3d8f53cc4de2bf7b9a531",
+        "private": true,
+        "releaseType": "release",
+        "publishAutoUpdate": "true"
+      }
+    ],
     "appId": "com.github.iffy.electronupdaterexample",
     "linux": {
       "target": [
